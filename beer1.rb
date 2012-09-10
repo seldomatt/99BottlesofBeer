@@ -1,11 +1,28 @@
+def plural(x)
+		if x == 1
+			"bottle"
+		else
+			"bottles"
+		end 
+end	
 99.downto(1).each do |n|
-			if n>2
-				puts "#{n} bottles of beer on the wall, #{n} bottles of beer. Take one down, pass it around, #{n-1} bottles of beer on the wall."
-			elsif n == 2
-				puts "#{n} bottles of beer on the wall, #{n} bottles of beer. Take one down, pass it around, #{n-1} bottle of beer on the wall."
-			else
-				puts "#{n} bottle of beer on the wall, #{n} bottle of beer. Take one down, pass it around, no more bottles of beer on the wall."
-		end
-	end
+	puts "#{n} #{plural(n)} of beer on the wall, #{n} #{plural(n)} of beer. Take one down, pass it around, #{n-1} #{plural(n-1)} of beer on the wall."
+end	
+
+
+
+
+
+	
+		
+
+
+
+
+
+
+
+
+
 
 
